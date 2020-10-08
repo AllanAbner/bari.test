@@ -25,6 +25,7 @@ namespace Bari.Test.Publisher
             {
                 var message = new MessageCreatedEvent()
                 {
+                    TimeStamp= DateTime.Now,
                     Text = "Hello World",
                     Identifier = Environment.MachineName
                 };
