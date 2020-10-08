@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>dotnet-Bari.Test.Publisher-79537897-AD49-4469-A910-84E9242C5837</UserSecretsId>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+   
     <DockerfileContext>..\..\..</DockerfileContext>
   </PropertyGroup>
 
