@@ -30,9 +30,7 @@ namespace Bari.Test.Publisher
                 };
 
                 _bus.Publish(message);
-           
 
-               
                 await Task.Delay(5000, stoppingToken);
             }
         }

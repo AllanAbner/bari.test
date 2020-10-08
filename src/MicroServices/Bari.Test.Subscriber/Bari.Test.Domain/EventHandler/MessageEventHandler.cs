@@ -11,6 +11,7 @@ namespace Bari.Test.Domain.EventHandler
         {
             Console.WriteLine($"Identificacao da mensagem: {@event.Id}");
             Console.WriteLine($"Mensagem criada em: {@event.TimeStamp}");
+            Console.WriteLine($"Mensagem recebida em: {DateTime.Now}");
             Console.WriteLine($"Mensagem enviada por: {@event.Identifier}");
             Console.WriteLine($"Mensagem : {@event.Text}");
             Console.WriteLine();

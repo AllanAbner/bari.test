@@ -1,10 +1,13 @@
-﻿{
+{
   "profiles": {
     "Bari.Test.Publisher": {
       "commandName": "Project",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       }
+    },
+    "Docker": {
+      "commandName": "Docker"
     }
   }
 }
