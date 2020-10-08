@@ -34,4 +34,6 @@ Executar o Publisher
 ````bash
 docker run -d  --name publishe01 -h publisher01  publisher
 
+## Passo 5
 
+Executar o projeto Bari.Test.Services.Api
