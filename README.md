@@ -32,6 +32,6 @@ docker build -t publisher .
 Executar o Publisher
 
 ````bash
-docker run -d  --name publishe01 -h publisher02  pub
+docker run -d  --name publishe01 -h publisher02  publisher
 
 
