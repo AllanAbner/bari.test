@@ -48,7 +48,6 @@ namespace Bari.Test.Domain.Core.Bus
                 var message = JsonConvert.SerializeObject(@event);
                 var body = Encoding.UTF8.GetBytes(message);
 
-                channel.ConfirmSelect();
                 channel.BasicPublish("", eventName, null, body);
                 channel.WaitForConfirmsOrDie();
 
