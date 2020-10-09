@@ -7,7 +7,7 @@ Envio e recebimento de mensagem  via RabbitMQ
 ## Docker Compose
 Muito simples, basta executar o comando para iniciar os contêineres
 ```
-$ docker-compose -f devops/docker-compose.yml up -d
+$ docker-compose up -d
 ```
 Para desligar:
 ```
