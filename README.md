@@ -2,10 +2,12 @@
 
 Envio e recebimento de mensagem  via RabbitMQ
 
+# Passo 1 
+Configurar as variaveis do rabbitmq em docker-compose.yml
 # Build'n'Run
 
 ## Docker Compose
-Muito simples, basta executar o comando para iniciar os contêineres
+Muito simples, após configurar o HOST basta executar o comando para iniciar os contêineres
 ```
 $ docker-compose up -d
 ```

@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3"
 services:
     rabbitmq:
         image: rabbitmq:3.8.5-management-alpine
@@ -9,9 +9,12 @@ services:
             - 5672:5672
 
     pubs01:
-        environment:
-            - MachineName= pubs01
+        environment:             
+             RabbitMq:Host: 192.168.0.11
+             RabbitMq:Username: guest
+             RabbitMq:Password: guest
         container_name: pubs01
+        hostname: pubs01
         restart: always
         build:
             context: .
@@ -19,9 +22,12 @@ services:
         depends_on:
         - rabbitmq
     pubs02:
-        environment:
-            - MachineName= pubs02
+        environment:           
+            RabbitMq:Host: 192.168.0.11
+            RabbitMq:Username: guest
+            RabbitMq:Password: guest
         container_name: pubs02
+        hostname: pubs02
         restart: always        
         build:
             context: .
@@ -29,7 +35,12 @@ services:
         depends_on:
         - rabbitmq
     subs:
-        container_name: subs
+        environment:           
+            RabbitMq:Host: 192.168.0.11
+            RabbitMq:Username: guest
+            RabbitMq:Password: guest
+            container_name: subs01
+            hostname: subs01
         restart: always
         build:
             context: .
