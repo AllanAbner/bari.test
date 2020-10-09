@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServices", "MicroServi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publisher", "Publisher", "{CE641EB1-BD0C-4EC0-9961-65EA301A6820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bari.Test.Publisher", "src\MicroServices\Bari.Test.Publisher\Bari.Test.Publisher.csproj", "{FD581753-ACC7-4C9A-B60C-7F56D51E0E35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bari.Test.Publisher", "src\MicroServices\Bari.Test.Publisher\Bari.Test.Publisher.csproj", "{FD581753-ACC7-4C9A-B60C-7F56D51E0E35}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A1959679-A24C-4171-B42C-BE1D898426A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bari.Test.Domain.Core", "src\Domain\Bari.Test.Domain.Core\Bari.Test.Domain.Core.csproj", "{28DE9113-7730-46DA-ACA9-32E8D180AB37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bari.Test.Domain.Core", "src\Domain\Bari.Test.Domain.Core\Bari.Test.Domain.Core.csproj", "{28DE9113-7730-46DA-ACA9-32E8D180AB37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Subscriber", "Subscriber", "{55208DC9-2EE1-4528-A0A9-86841EB1D66F}"
 EndProject
@@ -25,11 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{2ECB1169-6A55-4A66-9C62-31D88304FCFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bari.Test.Services.Api", "src\MicroServices\Bari.Test.Subscriber\Bari.Test.Services.Api\Bari.Test.Services.Api.csproj", "{B1104DE8-93C0-4F6C-BDD4-4E404357E0AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bari.Test.Services.Api", "src\MicroServices\Bari.Test.Subscriber\Bari.Test.Services.Api\Bari.Test.Services.Api.csproj", "{B1104DE8-93C0-4F6C-BDD4-4E404357E0AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bari.Test.Application", "src\MicroServices\Bari.Test.Subscriber\Bari.Test.Application\Bari.Test.Application.csproj", "{DBA7A626-9D8B-42CE-BFEC-C403C746CF74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bari.Test.Application", "src\MicroServices\Bari.Test.Subscriber\Bari.Test.Application\Bari.Test.Application.csproj", "{DBA7A626-9D8B-42CE-BFEC-C403C746CF74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bari.Test.Domain", "src\MicroServices\Bari.Test.Subscriber\Bari.Test.Domain\Bari.Test.Domain.csproj", "{588020F5-1862-421B-88BA-01CCEC61662D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bari.Test.Domain", "src\MicroServices\Bari.Test.Subscriber\Bari.Test.Domain\Bari.Test.Domain.csproj", "{588020F5-1862-421B-88BA-01CCEC61662D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8E7D2F7B-A977-4142-BA14-8647FC12B31D}"
 EndProject
@@ -37,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{7715F1BE-FDFD-4B92-BD1A-A64425BE8F02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bari.Test.Subscriber.Infra.IoC", "src\MicroServices\Bari.Test.Subscriber\Bari.Test.Subscriber.Infra.IoC\Bari.Test.Subscriber.Infra.IoC.csproj", "{1B6BCDC9-81BD-4334-9C5B-F791DC9BD9B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bari.Test.Subscriber.Infra.IoC", "src\MicroServices\Bari.Test.Subscriber\Bari.Test.Subscriber.Infra.IoC\Bari.Test.Subscriber.Infra.IoC.csproj", "{1B6BCDC9-81BD-4334-9C5B-F791DC9BD9B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

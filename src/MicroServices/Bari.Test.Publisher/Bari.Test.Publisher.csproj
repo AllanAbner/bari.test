@@ -5,6 +5,8 @@
     <UserSecretsId>dotnet-Bari.Test.Publisher-79537897-AD49-4469-A910-84E9242C5837</UserSecretsId>
    
     <DockerfileContext>..\..\..</DockerfileContext>
+   
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>

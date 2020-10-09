@@ -7,7 +7,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["src/MicroServices/Bari.Test.Subscriber/Bari.Test.Services.Api/Bari.Test.Services.Api.csproj", "src/MicroServices/Bari.Test.Subscriber/Bari.Test.Services.Api/"]
-COPY ["/src/MicroServices/Bari.Test.Subscriber/Bari.Test.Subscriber.Infra.IoC/Bari.Test.Subscriber.Infra.IoC.csproj", "src/MicroServices/Bari.Test.Subscriber/Bari.Test.Subscriber.Infra.IoC/"]
+COPY ["src/MicroServices/Bari.Test.Subscriber/Bari.Test.Subscriber.Infra.IoC/Bari.Test.Subscriber.Infra.IoC.csproj", "src/MicroServices/Bari.Test.Subscriber/Bari.Test.Subscriber.Infra.IoC/"]
 COPY ["src/Domain/Bari.Test.Domain.Core/Bari.Test.Domain.Core.csproj", "src/Domain/Bari.Test.Domain.Core/"]
 COPY ["src/MicroServices/Bari.Test.Subscriber/Bari.Test.Domain/Bari.Test.Domain.csproj", "src/MicroServices/Bari.Test.Subscriber/Bari.Test.Domain/"]
 RUN dotnet restore "src/MicroServices/Bari.Test.Subscriber/Bari.Test.Services.Api/Bari.Test.Services.Api.csproj"

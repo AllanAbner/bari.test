@@ -1,9 +1,38 @@
 version: "3.7"
 services:
     rabbitmq:
-      image: rabbitmq:3.8.5-management-alpine
-      container_name: rabbit
-      restart: always
-      ports:
-        - 15672:15672
-        - 5672:5672
+        image: rabbitmq:3.8.5-management-alpine
+        container_name: rabbit
+        restart: always
+        ports:
+            - 15672:15672
+            - 5672:5672
+
+    pubs01:
+        environment:
+            - MachineName= pubs01
+        container_name: pubs01
+        restart: always
+        build:
+            context: .
+            dockerfile: src/MicroServices/Bari.Test.Publisher/Dockerfile
+        depends_on:
+        - rabbitmq
+    pubs02:
+        environment:
+            - MachineName= pubs02
+        container_name: pubs02
+        restart: always        
+        build:
+            context: .
+            dockerfile: src/MicroServices/Bari.Test.Publisher/Dockerfile
+        depends_on:
+        - rabbitmq
+    subs:
+        container_name: subs
+        restart: always
+        build:
+            context: .
+            dockerfile: src/MicroServices/Bari.Test.Subscriber/Bari.Test.Services.Api/Dockerfile
+        depends_on:
+        - rabbitmq
